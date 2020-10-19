@@ -6,7 +6,7 @@
 .pizza{
     text-align: center;
     background-image: url(../images/carissa-gan-_0JpjeqtSyg-unsplash.jpg);
-    color: chartreuse;
+    color:red;
 }
 li{
     display: inline;
@@ -48,4 +48,5 @@ h2{
   }
  #contacts{
      text-align: center;
+     background-color: chartreuse;
  }
