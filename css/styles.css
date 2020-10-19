@@ -22,7 +22,7 @@ h3{
 
 .logo{
     text-align: center;
-    background-color: wheat;
+    background-color: violet;
     
 }
 .card {
@@ -43,14 +43,6 @@ h3{
     width: 100%;
     font-size: 18px;
   }
-  footer {
-
-    display:flex;
-    align-items: 
-    text-align:center;
-  }
-  #contacts img{
-      width:100px ;
-      height:100px ;
-    
-  }
+ #contacts{
+     text-align: center;
+ }
