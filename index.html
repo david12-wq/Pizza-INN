@@ -70,67 +70,102 @@
             </div>
         </div>
     </section>
-
-    <form action="/action_page.php" id="order">
-        <h3><b>ORDER</b></h3>order
+    <div id="card">
+        <div class="card-body">
+        <!-- A form for the pizza size -->
         <div class="form-group">
-            <label for="sel1">Select your order:</label>
-            <select class="form-control" id="sel1" name="sellist1">
-                <option selected>select...</option>
-                <option value="1">meat pizza</option>
-                <option value="2">chicken pizza</option>
-                <option value="3">pepperoni pizza</option>
-                <option value="4">vegetable pizza</option>
-            </select>
-            <br>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Pizza sizes</label>
-                </div>
-                <select class="custom-select" id="inputGroupSelect01">
-                    <option selected>Choose...</option>
-                    <option value="1">small</option>
-                    <option value="2">medium</option>
-                    <option value="3">large</option>
+            <div id="size">
+                <label for="pizzaSize">Size</label>
+                <select class="browser-default custom-select" id="pizzaSize">
+                    <option value="choose"></option>
+                    <option label="Large - ksh 2000" value="2000"></option>
+                    <option label="Medium -ksh 1500" value="1500"></option>
+                    <option label="Small -ksh 1000" value="1000"></option>
                 </select>
             </div>
-            <br>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">topping</label>
-                </div>
-                <select class="custom-select" id="inputGroupSelect01">
-                    <option selected>Choose...</option>
-                    <option value="1">sausage</option>
-                    <option value="2">beacon</option>
-                    <option value="3">cheese</option>
+        </div>
+        <!-- A form for the pizza crust -->
+        <div class="form-group">
+            <div id="crust">
+                <label for="pizzaCrust">Crust</label>
+                <select class="browser-default custom-select" id="pizzaCrust">
+                    <option label="choose"></option>
+                    <option label="Deep crust -ksh 500" value="500"></option>
+                    <option label="Cheese -ksh 450" value="450"></option>
+                    <option label="Stuffed crust -ksh 400" value="400"></option>
                 </select>
             </div>
-            <label for="crust">crust</label>
-            <select class="form-control" id="sel1" name="sellist1">
-                <option selected>Choose...</option>
-                <option value="1">cripsy</option>
-                <option value="2">gluten free</option>
-                <option value="3">stuffed</option>
-                <input type="submit" class="btn btn-info" value="Submit">
+        </div>
+        <!-- A form for the pizza topping -->
+        <div class=" form-group">
+            <div id="toppings">
+                <label for="pizzaTopping">Meat</label>
+                <select class="browser-default custom-select" id="pizzaTopping">
+                    <option label="choose"></option>
+                    <option label="Bacon -ksh.120" value="120"></option>
+                    <option label="Beef -ksh.120" value="120"></option>
+                    <option label="Sausages -ksh.100" value="100"></option>
+                    <option label="Chicken -ksh.100" value="100"></option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div id="toppings">
+                <label for="pizzaTopping">Veggies</label>
+                <select class="browser-default custom-select" id="pizzaTopping">
+                    <option label="choose"></option>
+                    <option label="spinach -ksh.130" value="130"></option>
+                    <option label="Tomatoes -ksh.100" value="100"></option>
+                    <option label="Corriender -ksh.80" value="80"></option>
+                    <option label="Onions -ksh.60" value="60"></option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+                <div id="toppings">
+                    <label for="pizzaTopping">Cheese</label>
+                    <select class="browser-default custom-select" id="pizzaCheese">
+                        <option label="choose"></option>
+                        <option label="Ricotta -ksh.130" value="130"></option>
+                        <option label="Parmesam -ksh.100" value="100"></option>
+                        <option label="Cheddar -ksh.80" value="80"></option>
+                        <option label="Provolone -ksh.60" value="60"></option>
+                    </select>
+                </div>
+            </div>
+        <!-- A form for the number of pizza ordered -->
+        <div class="form-group">
+            <div id="number">
+                <label for="quantity">Quantity</label>
+                <input class="form-control" type="number" name="pizza" id="quantity" placeholder="0"
+                    max="" min="0">
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- A submit button to confirm the order -->
+    <button class="btn btn-success mx-auto d-block submit" type="submit" id="submit2"
+        onclick="totalAmount();"><strong>Confirm order</strong></button>
 
-            </select>
-            <br>
-            <br>
-            <footer>
-                <div id="contacts">
-                    <div>
-                        <p>contact;0716903464</p>
-                        <p>Email;davidkamau245@gmail.com</p>
-                    </div>
-                    <div>
-                        
-            <a href="#"><img src="images/facebook.png" alt=""></a>
-            <a href="#"><img src="images/instagram.jpeg" alt=""></a>
-            <a href="#"><img src="images/whatsap.jpeg" alt=""></a>
-            </footer>
+        </div>
+    </div>
+   
+</div>
+    <br>
+    <br>
+    <footer>
+        <div id="contacts">
+            <div>
+                <p>contact;0716903464</p>
+                <p>Email;davidkamau245@gmail.com</p>
+            </div>
+            <div>
 
-            <br>
+                <a href="#"><img src="images/facebook.png" alt=""></a>
+                <a href="#"><img src="images/instagram.jpeg" alt=""></a>
+                <a href="#"><img src="images/whatsap.jpeg" alt=""></a>
+    </footer>
+    <script src="js/script.js"></script>
 
 
 </body>
