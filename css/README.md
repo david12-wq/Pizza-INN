@@ -1,5 +1,5 @@
 # Pizza-INN
-#### {This is a website where can order pizza and dalivery  can be made}, {19/10/2020}
+#### {This is a website where one can order pizza and  dalivery  can be made online}, {19/10/2020}
 #### David kamau  
 This is about me{https://github.com/david12-wq/Pizza-INN}
 ---
